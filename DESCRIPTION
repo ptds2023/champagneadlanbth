@@ -1,12 +1,13 @@
 Package: champagneadlanbth
 Type: Package
-Title: What the Package Does (Title Case)
+Title: champagneadlanbth
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Adlan Boithier
+Maintainer: Adlan Boithier <adlan.boithier@unil.ch>
+Description: Allows to model a Champagne glass in different ways. 
+Allows to compute the volume of a Champagne glass.
+Allows to compute the volume and number of bottles of Champagne needed for a party under some circumstances.
+License: None
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
