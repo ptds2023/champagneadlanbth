@@ -1,4 +1,4 @@
-#' @title Compute the volume of champagne poured in a glass using "uniroot".
+#' @title Compute volume using uniroot.
 #'
 #' Define the volume of champagne poured in a glass using "uniroot".
 #' @author Adlan Boithier
@@ -10,14 +10,14 @@
 #' f <- function(x) {
 #' result <- numeric(length(x))
 #' for (i in seq_along(x)) {
-#'   result[i] <- f(x[i])
+#'   result[i] <- champagne_f(x[i])
 #' }
 #' return(result)
 #' }
 #'
 #'integrand <- function(x) {
-#' sapply(x, f)
+#' sapply(x, champagne_f)
 #'}
 #' @export
-b_uniroot <- uniroot(function(x) integrate(integrand, lower = 10, upper = x)$value - 0.2, c(10, 20))$root
-cat("Value of b using uniroot:", b_uniroot, "\n")
+champagne_b_uniroot <- uniroot(function(x) integrate(champagne_integrand, lower = 10, upper = x)$value - 0.2, c(10, 20))$root
+cat("Value of b using uniroot:", champagne_b_uniroot, "\n")

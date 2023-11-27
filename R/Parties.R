@@ -1,4 +1,4 @@
-#' Simulate parties and estimate Champagne needed.
+#' @title Simulate parties and estimate Champagne needed.
 #'
 #' This function simulates parties and estimates the amount of Champagne needed based on various parameters.
 #' @author Adlan Boithier
@@ -9,16 +9,16 @@
 #' @param mu_b Mean of the normal distribution.
 #' @param sd_b Standard deviation of the normal distribution.
 #' @param volume_bottle The volume of a Champagne bottle.
-#' @return A tibble with columns 'partie' (party number), 'G' (number of guests), 'D' (total glasses drank),
+#' @return A tibble with columns 'party' (party number), 'G' (number of guests), 'D' (total glasses drank),
 #' 'b' (total Champagne in milliliters), and 'bottles' (number of Champagne bottles needed).
 #' @examples
 #' \dontrun{
 #' # Example function call:
-#' result <- Parties(n = 100, lambda_G = 10, lambda_D = 5, a = 0.5, mu_b = 5, sd_b = 2, volume_bottle = 0.75)
+#' result <- champagne_Parties(n = 100, lambda_G = 10, lambda_D = 5, a = 0.5, mu_b = 5, sd_b = 2, volume_bottle = 0.75)
 #' }
 #'
 #' @export
-Parties <- function(n, lambda_G, lambda_D, a, mu_b, sd_b, volume_bottle) {
+champagne_Parties <- function(n, lambda_G, lambda_D, a, mu_b, sd_b, volume_bottle) {
   tibble::tibble(
     partie = seq_len(n),
     G = rpois(n, lambda_G),

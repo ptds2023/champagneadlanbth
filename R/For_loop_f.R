@@ -1,16 +1,17 @@
-#' @title Vectorization of f by using a "for" loop
+#' @title Vectorize f with a for loop
 #'
 #' Vectorize, by using a "for" loop, the non-vectorized function to compute the volume of a cup of Champagne glass
 #' @author Adlan Boithier
 #' @param x A list or atomic vector.
+#' @param champagne_f a function.
 #' @return The volume of a cup of Champagne glass
 #' @examples
-#' f1 <- f_loop(2)
+#' f1 <- champagne_f_loop(2)
 #' @export
-f_loop <- function(x) {
+champagne_f_loop <- function(x) {
   result <- numeric(length(x))
   for (i in seq_along(x)) {
-    result[i] <- f(x[i])
+    result[i] <- champagne_f(x[i])
   }
   return(result)
 }

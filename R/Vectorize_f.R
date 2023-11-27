@@ -1,11 +1,10 @@
-#' @title Vectorization of f by using a "Vectorize"
+#' @title Vectorize f by using Vectorize
 #'
 #' Vectorize, by using "Vectorize", the non-vectorized function to compute the volume of a cup of Champagne glass
 #' @author Adlan Boithier
-#' @param x A list or atomic vector.
-#' @param f A function.
+#' @param champagne_f A function.
 #' @return The volume of a cup of Champagne glass
 #' @examples
-#' f1 <- f_Vectorize(f)
+#' f1 <- champagne_f_Vectorize(f)
 #' @export
-f_Vectorize <- Vectorize(f)
+champagne_f_Vectorize <- Vectorize(champagne_f)

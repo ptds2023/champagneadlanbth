@@ -1,4 +1,4 @@
-#' @title Compute the integrand for volume calculation.
+#' @title Integrand for volume calculation
 #'
 #' Define the integrand for volume calculation.
 #' @author Adlan Boithier
@@ -6,8 +6,8 @@
 #' @param f A function.
 #' @return The integrand.
 #' @examples
-#' #' # Define the "f_loop" function
-#' f <- function(x) {
+#' # Define the "f_loop" function
+#' champagne_f_loop <- function(x) {
 #' result <- numeric(length(x))
 #' for (i in seq_along(x)) {
 #'   result[i] <- f(x[i])
@@ -16,6 +16,6 @@
 #' }
 #'
 #' @export
-integrand <- function(x) {
-  sapply(x, f)
+champagne_integrand <- function(x) {
+  sapply(x, champagne_f)
 }
