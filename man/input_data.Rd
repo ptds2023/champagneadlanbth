@@ -56,7 +56,7 @@ map_dbl(x, f)
 f_sapply <- function(x) {
 sapply(x, f)
 }
-f_Vectorize <- Vecorize(f)
+f_Vectorize <- Vectorize(f)
 f_vectorized <- function(x) {
  ifelse(x < 0, 0,
       ifelse(0 <= x & x < 0.5, 15,

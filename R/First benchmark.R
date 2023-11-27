@@ -36,7 +36,7 @@
 #' f_sapply <- function(x) {
 #' sapply(x, f)
 #' }
-#' f_Vectorize <- Vecorize(f)
+#' f_Vectorize <- Vectorize(f)
 #'
 #' # Benchmark the functions with different input sizes
 #' input <- c(10, 100, 1000, 10000)
