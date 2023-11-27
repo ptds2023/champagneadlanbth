@@ -46,7 +46,7 @@
 #' @export
 benchmarking_results <- lapply(input, function(n) {
   input_data <- seq_len(n)
-  microbenchmark(
+  microbenchmark::microbenchmark(
     loop = f_loop(input_data),
     purrr = f_purrr(input_data),
     sapply = f_sapply(input_data),

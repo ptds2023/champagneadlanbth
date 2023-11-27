@@ -15,8 +15,4 @@
 #' # Now, you can extract the results using benchmark_data function:
 #' benchmark_data <- extract_benchmark_results(benchmarking_results)
 #' @export
-benchmark_data <- lapply(seq_along(benchmarking_results), function(i) {
-  as.data.frame(benchmarking_results[[i]]) %>%
-    mutate(size = input[i])
-}) %>%
-  bind_rows()
+benchmark_data <- lapply(seq_along(benchmarking_results), function(i) { as.data.frame(benchmarking_results[[i]]) %>% dplyr::mutate(size = input[i]) }) %>% bind_rows()

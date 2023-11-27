@@ -9,5 +9,5 @@
 #' f1 <- f_purrr(2, f)
 #' @export
 f_purrr <- function(x) {
-  map_dbl(x, f)
+  purrr::map_dbl(x, f)
 }

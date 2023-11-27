@@ -56,7 +56,7 @@
 
 #' @export
 input_data <- seq_len(1000)  # Example input data
-benchmark_results <- microbenchmark(
+benchmark_results <- microbenchmark::microbenchmark(
   loop = f_loop(input_data),
   purrr = f_purrr(input_data),
   sapply = f_sapply(input_data),
