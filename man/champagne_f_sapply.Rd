@@ -22,7 +22,7 @@ Vectorization of f with apply.
 Vectorize, by using one of the "apply" functions.", the non-vectorized function to compute the volume of a cup of Champagne glass
 }
 \examples{
-f1 <- champagne_f_sapply(2, champagne_f)
+f1 <- champagne_f_sapply(c(1,2,3))
 }
 \author{
 Adlan Boithier

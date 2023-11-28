@@ -19,3 +19,4 @@ champagne_f_vectorized <- function(x) {
   )
 }
 
+

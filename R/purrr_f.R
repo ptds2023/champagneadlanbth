@@ -6,7 +6,7 @@
 #' @param champagne_f A function.
 #' @return The volume of a cup of Champagne glass
 #' @examples
-#' f1 <- champagne_f_purrr(2, champagne_f)
+#' f1 <- champagne_f_purrr(c(1,2,3))
 #' @importFrom purrr map_dbl
 #' @export
 champagne_f_purrr <- function(x) {

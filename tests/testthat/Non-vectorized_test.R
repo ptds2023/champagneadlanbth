@@ -1,11 +1,13 @@
-context("Test for non-vectorized version of f")
+library(testthat)
+library(devtools)
+load_all()
 
 test_that("champagne_f returns the correct result for a single value", {
   # Load the testthat library
   library(testthat)
 
   # Load the file that contains the champagne_f function
-  source("R/non-vectorized_f.R")
+  source(system.file("R", "Non-vectorized_f.R", package = "champagneadlanbth"))
 
   # Test multiple possibilities
 

@@ -1,11 +1,13 @@
-context("Test for the Parties function")
+library(testthat)
+library(devtools)
+load_all()
 
 test_that("champagne_Parties returns a tibble with expected columns", {
   # Load the testthat library
   library(testthat)
 
   # Load the file containing the champagne_Parties function
-  source("R/Parties.R")
+  source(system.file("R", "Parties.R", package = "champagneadlanbth"))
 
   # Test various cases with different arguments for the champagne_Parties function
 

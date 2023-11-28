@@ -9,9 +9,7 @@ Vectorize, by using a "for" loop, the non-vectorized function to compute the vol
 champagne_f_loop(x)
 }
 \arguments{
-\item{x}{A list or atomic vector.}
-
-\item{champagne_f}{a function.}
+\item{x}{A list or atomic vector}
 }
 \value{
 The volume of a cup of Champagne glass

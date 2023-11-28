@@ -1,14 +1,16 @@
-context("Test for vectorized version of f using Vectorize")
+library(testthat)
+library(devtools)
+load_all()
 
 test_that("champagne_f_Vectorize returns the correct result for a vector", {
   # Load the testthat library
   library(testthat)
 
   # Load the file containing the champagne_f_Vectorize function
-  source("R/Vectorize_f.R")
+  source(system.file("R", "Vectorized_f.R", package = "champagneadlanbth"))
 
   # Load the file containing the champagne_f function
-  source("R/Non-vectorized_f.R")
+  source(system.file("R", "Non-vectorized_f.R", package = "champagneadlanbth"))
 
   # Test various cases with different arguments for the f_Vectorize function
 

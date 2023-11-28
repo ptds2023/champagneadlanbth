@@ -37,7 +37,6 @@ This function simulates parties and estimates the amount of Champagne needed bas
 # Example function call:
 result <- champagne_Parties(n = 100, lambda_G = 10, lambda_D = 5, a = 0.5, mu_b = 5, sd_b = 2, volume_bottle = 0.75)
 }
-
 }
 \author{
 Adlan Boithier

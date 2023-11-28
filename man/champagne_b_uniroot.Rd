@@ -14,8 +14,6 @@ champagne_b_uniroot
 }
 \arguments{
 \item{x}{A list or atomic vector.}
-
-\item{f}{A function.}
 }
 \value{
 The volume of champagne poured in a glass.

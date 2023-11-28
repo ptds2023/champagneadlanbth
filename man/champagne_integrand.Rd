@@ -11,7 +11,7 @@ champagne_integrand(x)
 \arguments{
 \item{x}{A list or atomic vector.}
 
-\item{f}{A function.}
+\item{champagne_f}{A function.}
 }
 \value{
 The integrand.

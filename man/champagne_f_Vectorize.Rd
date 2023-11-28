@@ -9,7 +9,7 @@ Vectorize, by using "Vectorize", the non-vectorized function to compute the volu
 champagne_f_Vectorize(x)
 }
 \arguments{
-\item{champagne_f}{A function.}
+\item{x}{A list or atomic vector.}
 }
 \value{
 The volume of a cup of Champagne glass
@@ -20,7 +20,7 @@ Vectorize f by using Vectorize
 Vectorize, by using "Vectorize", the non-vectorized function to compute the volume of a cup of Champagne glass
 }
 \examples{
-f1 <- champagne_f_Vectorize(f)
+f1 <- champagne_f_Vectorize(c(1,2,3))
 }
 \author{
 Adlan Boithier

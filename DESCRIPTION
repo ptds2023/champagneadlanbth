@@ -5,8 +5,15 @@ Version: 0.1.0
 Author: Adlan Boithier
 Maintainer: Adlan Boithier <adlan.boithier@unil.ch>
 Description: Allows to model a Champagne glass in different ways. Allows to compute the volume of a Champagne glass. Allows to compute the volume and number of bottles of Champagne needed for a party under some circumstances.
-License: None
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
-Imports: purrr, microbenchmark, dplyr, tidyverse
+Imports:
+  tibble,
+  dplyr,
+  microbenchmark,
+  tidyverse,
+  testthat,
+  purrr
+Config/testthat/edition: 3

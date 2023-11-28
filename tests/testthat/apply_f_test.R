@@ -1,4 +1,6 @@
-context("Test for vectorized version of f using sapply")
+library(testthat)
+library(devtools)
+load_all()
 
 test_that("champagne_f_sapply returns the correct result for a vector", {
   # Load the testthat library

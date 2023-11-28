@@ -6,7 +6,7 @@
 #' @param champagne_f A function.
 #' @return The volume of a cup of Champagne glass
 #' @examples
-#' f1 <- champagne_f_sapply(2, champagne_f)
+#' f1 <- champagne_f_sapply(c(1,2,3))
 #' @export
 champagne_f_sapply <- function(x) {
   sapply(x, champagne_f)

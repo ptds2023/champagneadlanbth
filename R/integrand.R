@@ -3,7 +3,7 @@
 #' Define the integrand for volume calculation.
 #' @author Adlan Boithier
 #' @param x A list or atomic vector.
-#' @param f A function.
+#' @param champagne_f A function.
 #' @return The integrand.
 #' @examples
 #' # Define the "f_loop" function

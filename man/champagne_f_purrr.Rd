@@ -22,7 +22,7 @@ Vectorize f with purrr
 Vectorize, by using a "map" function of "purrr", the non-vectorized function to compute the volume of a cup of Champagne glass
 }
 \examples{
-f1 <- champagne_f_purrr(2, champagne_f)
+f1 <- champagne_f_purrr(c(1,2,3))
 }
 \author{
 Adlan Boithier

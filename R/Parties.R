@@ -16,11 +16,11 @@
 #' # Example function call:
 #' result <- champagne_Parties(n = 100, lambda_G = 10, lambda_D = 5, a = 0.5, mu_b = 5, sd_b = 2, volume_bottle = 0.75)
 #' }
-#'
+#' @importFrom stats rpois rnorm
 #' @export
 champagne_Parties <- function(n, lambda_G, lambda_D, a, mu_b, sd_b, volume_bottle) {
   tibble::tibble(
-    partie = seq_len(n),
+    party = seq_len(n),
     G = rpois(n, lambda_G),
     D = purrr::map_dbl(G, ~ sum(rpois(.x, lambda_D))),
     b = purrr::map_dbl(D, ~ sum(pmin(rnorm(.x, mu_b, sd_b), a))),

@@ -1,14 +1,16 @@
-context("Test for vectorized version of f using a 'for' loop")
+library(testthat)
+library(devtools)
+load_all()
 
 test_that("champagne_f_loop returns the correct result for a vector", {
   # Load the testthat library
   library(testthat)
 
   # Load the file that contains the champagne_f_loop function
-  source("R/For_loop_f.R")
+  source(system.file("R", "For_loop_f.R", package = "champagneadlanbth"))
 
   # Load the file that contains the champagne_f function
-  source("R/Non-vectorized_f.R")
+  source(system.file("R", "Non-vectorized_f.R", package = "champagneadlanbth"))
 
   # Test multiple possibilities with different arguments
 
