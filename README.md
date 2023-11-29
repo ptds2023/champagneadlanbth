@@ -22,7 +22,7 @@ devtools::install_github("ptds2023/champagneadlanbth")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to solve how much Champagne is needed :
 
 ``` r
 # Example to simulate parties and estimate Champagne needed
