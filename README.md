@@ -25,6 +25,7 @@ devtools::install_github("ptds2023/champagneadlanbth")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
+# Example to simulate parties and estimate Champagne needed
 library(champagneadlanbth)
 ## result <- champagne_Parties(
 n = 100,
