@@ -10,8 +10,6 @@ champagne_f_sapply(x)
 }
 \arguments{
 \item{x}{A list or atomic vector.}
-
-\item{champagne_f}{A function.}
 }
 \value{
 The volume of a cup of Champagne glass

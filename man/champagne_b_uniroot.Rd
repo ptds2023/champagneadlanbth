@@ -10,7 +10,7 @@ Define the volume of champagne poured in a glass using "uniroot".}
 An object of class \code{numeric} of length 1.
 }
 \usage{
-champagne_b_uniroot
+champagne_b_uniroot(x)
 }
 \arguments{
 \item{x}{A list or atomic vector.}

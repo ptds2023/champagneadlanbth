@@ -1,9 +1,7 @@
 #' @title Integrand for volume calculation
 #'
 #' Define the integrand for volume calculation.
-#' @author Adlan Boithier
 #' @param x A list or atomic vector.
-#' @param champagne_f A function.
 #' @return The integrand.
 #' @examples
 #' # Define the "f_loop" function
@@ -16,6 +14,8 @@
 #' }
 #'
 #' @export
+#' @author Adlan Boithier
+#' @usage champagne_integrand(x)
 champagne_integrand <- function(x) {
   sapply(x, champagne_f)
 }
