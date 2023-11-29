@@ -2,6 +2,8 @@
 # champagneadlanbth
 
 <!-- badges: start -->
+[![Codecov test coverage](https://codecov.io/gh/ptds2023/champagneadlanbth/branch/master/graph/badge.svg)](https://app.codecov.io/gh/ptds2023/champagneadlanbth?branch=master)
+[![R-CMD-check](https://github.com/ptds2023/champagneadlanbth/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ptds2023/champagneadlanbth/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of champagneadlanbth is to : 

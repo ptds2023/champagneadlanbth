@@ -13,5 +13,7 @@ Imports:
   tibble,
   purrr,
 Suggests:
-  testthat
+    covr,
+    testthat
 Config/testthat/edition: 3
+URL: https://ptds2023.github.io/champagneadlanbth/
